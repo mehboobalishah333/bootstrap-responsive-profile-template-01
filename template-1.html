@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrapfiles/css/bootstrap.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <style>
+        .card {
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        
+        .card:hover {
+            width: 99%;
+            height: 99%;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        
+        .web-design-icon:before {
+            content: "\f109";
+            display: block;
+            text-align: center;
+            font-family: 'fontawesome';
+            font-size: 50px;
+            background-color: rgba(100, 100, 100, 0.1);
+            width: 30%;
+            padding: 12px 10px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        
+        .branding-icon:before {
+            content: "\f0a1";
+            display: block;
+            text-align: center;
+            font-family: 'fontawesome';
+            font-size: 50px;
+            background-color: rgba(100, 100, 100, 0.1);
+            width: 30%;
+            padding: 12px 10px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        
+        .development-icon:before {
+            content: "\f0e9";
+            display: block;
+            text-align: center;
+            font-family: 'fontawesome';
+            font-size: 50px;
+            background-color: rgba(100, 100, 100, 0.1);
+            width: 30%;
+            padding: 12px 10px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        
+        .creative-icon:before {
+            content: "\f219";
+            display: block;
+            text-align: center;
+            font-family: 'fontawesome';
+            font-size: 50px;
+            background-color: rgba(100, 100, 100, 0.1);
+            width: 30%;
+            padding: 12px 10px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        
+        .responsive-icon:before {
+            content: "\f108";
+            display: block;
+            text-align: center;
+            font-family: 'fontawesome';
+            font-size: 50px;
+            background-color: rgba(100, 100, 100, 0.1);
+            width: 30%;
+            padding: 12px 10px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        
+        .retina-icon:before {
+            content: "\f030";
+            display: block;
+            text-align: center;
+            font-family: 'fontawesome';
+            font-size: 50px;
+            background-color: rgba(100, 100, 100, 0.1);
+            width: 30%;
+            padding: 12px 10px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        
+        .my-card {
+            background-color: #ffffff;
+        }
+        
+        .services-section {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        .gothic {
+            font-family: 'Didact Gothic', sans-serif;
+        }
+        
+        .developer {
+            font-family: 'Didact Gothic', sans-serif;
+            font-weight: lighter;
+            font-size: 28pt;
+            letter-spacing: 2px;
+        }
+        
+        .rounded-icon {
+            color: rgba(255, 255, 255, 0.7);
+            background: rgba(0, 0, 0, 0.9);
+            padding: 5px 8px;
+        }
+        
+        .rounded-icon:hover {
+            color: rgba(0, 0, 0, 0.8);
+            background: rgba(255, 255, 255, 0.7);
+            padding: 5px 8px;
+        }
+        
+        .banner-bg {
+            background: url('images/mountain-modify-lg.jpg') no-repeat 0 0;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .navbar-brand {
+            font-family: 'Russo One', sans-serif;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .developer-padding {
+            padding: 40px 0 100px 0;
+        }
+        
+        @media only screen and (min-width: 992px) {
+            .collapse {
+                margin-left: 200px;
+            }
+            .collapse li {
+                padding: 0 10px;
+            }
+            .developer-padding {
+                padding: 60px 0 200px 0;
+            }
+        }
+        
+        @media only screen and (max-width: 321px) {
+            .developer {
+                font-size: 24pt;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- container for banner(wallpaper) -->
+    <div class="container-fluid">
+        <div class="banner-bg">
+            <div class="overlay">
+                <!-- navbar -->
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                        <a class="navbar-brand" href="#">DANIELS</a>
+                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav mr-auto mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Works</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Clients</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </nav>
+
+                    <!--  I am developer and links-->
+                    <div class="row developer-padding">
+
+                        <!--  I am developer -->
+                        <div class="col-lg-12 text-light mt-sm-5 text-center">
+                            <h1>Hello</h1>
+                            <span class="developer">I Am Developer</span>
+                        </div>
+
+                        <!-- links-->
+                        <div class="col-lg-12 text-center mt-lg-3">
+                            <a href=""><i class="fa fa-facebook-square rounded-circle rounded-icon"></i></a>
+
+                            <a href=""><i class="fa fa-twitter-square rounded-circle rounded-icon"></i></a>
+
+                            <a href=""><i class="fa fa-linkedin-square rounded-circle rounded-icon"></i></a>
+
+                            <a href=""><i class="fa fa-instagram rounded-circle rounded-icon"></i></a>
+
+                            <a href=""><i class="fa fa-youtube-square rounded-circle rounded-icon"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid mt-4">
+        <div class="container">
+            <div class="row">
+                <!-- profile pic -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <img src="images/my-1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-8 col-md-6 col-12">
+                    <h3 class="font-weight-bold mb-0 mt-3">About Me</h3>
+                    <div class="occupation text-muted small font-italic">UI / UX DESIGNER & WEB DEVELOPER</div>
+
+                    <p class="mt-3 gothic">I am <span class="font-weight-bold"> Mehboob Ali Shah</span>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam mollitia quae doloremque nisi? Eius, quas. Fugiat asperiores ipsam nemo beatae, et eaque ut voluptatibus
+                        nesciunt consequatur nostrum? Asperiores iste numquam explicabo inventore possimus voluptate officia unde in placeat adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe a enim excepturi hic quas beatae, maxime
+                        ipsam nostrum tempore consectetur?</p>
+
+
+                    <!-- skills bar -->
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-dark text-left px-2" role="progressbar" style="width: 96%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Web Design <span class="text-right">96%</span></div>
+                    </div>
+
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-dark text-left px-2" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Branding <span class="text-right">80%</span></div>
+                    </div>
+
+                    <div class="progress mb-5">
+                        <div class="progress-bar bg-dark text-left px-2" role="progressbar" style="width: 88%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Development <span class="text-right">88%</span></div>
+                    </div>
+
+                    <div class="d-flex justify-content-sm-center justify-content-md-start">
+                        <a href="" class="btn btn-dark px-4 mt-4">Download CV</a>
+                        <a href="" class="btn btn-light px-4 mt-4">Contact No</a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid services-section mt-5">
+        <div class="container">
+            <!-- Services -->
+            <div class="row">
+                <h2 class="col-lg-12 font-weight-bold text-center mt-5">Services.</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold text-center mt-5 web-design-icon">Web Design</h4>
+                            <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis minima velit sunt error consequuntur amet laborum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold text-center mt-5 branding-icon">Branding</h4>
+                            <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis minima velit sunt error consequuntur amet laborum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold text-center mt-5 development-icon">Development</h4>
+                            <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis minima velit sunt error consequuntur amet laborum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold text-center mt-5 creative-icon">Creative Design</h4>
+                            <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis minima velit sunt error consequuntur amet laborum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold text-center mt-5 responsive-icon">Fully Responsive</h4>
+                            <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis minima velit sunt error consequuntur amet laborum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h4 class="card-title font-weight-bold text-center mt-5 retina-icon">Retina Ready</h4>
+                            <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis minima velit sunt error consequuntur amet laborum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="bootstrapfiles/js/jquery.min.js"></script>
+    <script src="bootstrapfiles/js/popper.min.js"></script>
+    <script src="bootstrapfiles/js/bootstrap.min.js"></script>
+</body>
+
+</html>
